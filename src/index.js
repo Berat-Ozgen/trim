@@ -1,6 +1,3 @@
-import React from 'react'
-import styles from './styles.module.css'
-
-export const ExampleComponent = ({ text }) => {
-  return <div className={styles.test}>Example Component: {text}</div>
+export function Trim(str, n) {
+  return str?.length > n ? str.substr(0, n - 1) + '...' : str
 }
